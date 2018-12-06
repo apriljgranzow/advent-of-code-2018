@@ -1,21 +1,7 @@
 with open("input5.txt") as file:
     chain = file.read()
 
-def pairs(string):
-    return list(zip(string[:len(string)],string[1:]))
-
-def react(pairs):
-    return [x for x in pairs if x[0] != x[1].swapcase()]
-
-def part_one(string): # this one doesn't work lol - it's inefficient to generate so many new lists
-    reaction = react(pairs(string))
-    newList = [i for sub in reaction for i in sub]
-    while len(newList) != len(reaction):
-        reaction = react(pairs(newList))
-        newList = [i for sub in newList for i in sub]
-    return [i for sub in newList for i in sub]
-
-def part_one_stack(string):
+def part_one(string):
     string = list(string)
     stack = [string.pop()]
     while string:
@@ -28,5 +14,16 @@ def part_one_stack(string):
             stack.append(string.pop())
     return len(stack)
         
-def part_two():
-    pass
+def filter_letter(letter,string):
+    newList = []
+    for char in string:
+        if char != letter and char != letter.swapcase():
+            newList.append(char)
+    return newList       
+
+def part_two(string):
+    letters = {chr(i) : part_one(filter_letter(chr(i),string)) for i in range(97,123)}
+    return min(letters.values())
+
+if __name__ == "__main__":
+    print(part_two(chain))
