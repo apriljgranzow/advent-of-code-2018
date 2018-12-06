@@ -7,11 +7,13 @@ I will be attempting to leaderboard for my first time participating in this even
 When I have time I intend to go back and redo challenges in a functional style using either Haskell or Clojure to learn more about the languages and strengthen my ability to solve problems using functional programming paradigms.
 
 # Index
-1. Chronal Calibration: [Python](https://github.com/apriljgranzow/advent-of-code-2018/blob/master/Python/1/day1.py)
+Note
+
+1. Chronal Calibration: [Python](https://github.com/apriljgranzow/advent-of-code-2018/blob/master/Python/1/)
 2. Inventory Management System: [Python]()
 3. No Matter How You Slice It: [Python]()
-4. Repose Record: [Python](https://github.com/apriljgranzow/advent-of-code-2018/blob/master/Python/4/day4.py)
-5. 
+4. Repose Record: [Python](https://github.com/apriljgranzow/advent-of-code-2018/blob/master/Python/4/)
+5. Alchemical Reduction: [Python](https://github.com/apriljgranzow/advent-of-code-2018/blob/master/Python/5/)
 6. 
 7. 
 8. 
